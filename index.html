@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>project 110</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <center>
+        <h2 class="btn btn-warning"> Hand Gesture Recogniser App
+            <br>
+            <span>&#9757;</span>
+            <span>&#9996;</span>
+            <span>&#128075;</span>
+            <span>&#9757;</span>
+            <span>&#9996;</span>
+            <span>&#128075;</span>
+        </h2>
+        <p>This program is made for these 6 Gestures:</p>
+        <span>&#9757;</span>
+        <span>&#9996; | </span>
+        <span>&#128075; | </span>
+        <span>&#128076; | </span>
+        <span>&#128077; | </span>
+        <span>&#128078;</span>
+        <br><br>
+
+        <div id="webcam_view" class="col-md-4 col-sm-12 col-xs-12">
+            <label>Your webcam - </label>
+            <div id="webcam"></div>
+            <button class="btn btn-warning" onclick="take_snapshot()">Take Snapshot</button>
+        </div>
+
+        <div id="prediction" class="col-md-4 col-sm-12 col-xs-12">
+            <p id="emoji_name"></p>
+            <div id="emoji"></div>
+        </div>
+
+        <div id="snapshot_area" class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot taken - </label>
+            <div id="snapshot"></div>
+            <button class="btn btn-success" onclick="check()">check</button>
+        </div>
+
+        <div 
+    </center>
+</body>
+
+</html>
